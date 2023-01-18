@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: microbot
-        image: microbot:1
+        image: cdkbot/microbot:1
         resources:
           limits:
             memory: "128Mi"
