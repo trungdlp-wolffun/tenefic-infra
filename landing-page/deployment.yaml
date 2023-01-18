@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microbot
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: microbot
+  type: ClusterIP
+    ports:
+      - port: 80
+        targetPort: 80
