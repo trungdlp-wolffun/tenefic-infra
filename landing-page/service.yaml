@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: microbot
+  namespace: default
+spec:
+  selector:
+    app: microbot
+  ports:
+    - port: 80
