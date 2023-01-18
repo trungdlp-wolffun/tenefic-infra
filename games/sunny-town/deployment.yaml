@@ -4,7 +4,7 @@ metadata:
   name: sunny-town-server
   namespace: games
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: sunny-town-server
@@ -19,7 +19,6 @@ spec:
         image: trungkenbi/avatar:latest
         resources:
           limits:
-            memory: "1024Mi"
             cpu: "100m"
         ports:
           - containerPort: 19128
