@@ -4,7 +4,7 @@ metadata:
   name: microbot
   namespace: default
 spec:
-  replicas: 3
+  replicas: 50
   selector:
     matchLabels:
       app: microbot
