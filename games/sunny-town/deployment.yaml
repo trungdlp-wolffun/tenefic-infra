@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: avatar
+  name: sunny-town-server
   namespace: game
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: avatar
+      app: sunny-town-server
   template:
     metadata:
-      name: avatar
+      name: sunny-town-server
       labels:
-        app: avatar
+        app: sunny-town-server
     spec:
       containers:
-      - name: microbot
+      - name: sunny-town-server
         image: trungkenbi/avatar:latest
         resources:
           limits:
