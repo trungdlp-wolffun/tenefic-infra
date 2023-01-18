@@ -18,3 +18,7 @@ spec:
             name: guestbook-ui
             port:
               name: https
+  tls:
+  - hosts:
+    - dev.tenefic.com
+    secretName: landing-page-secret
