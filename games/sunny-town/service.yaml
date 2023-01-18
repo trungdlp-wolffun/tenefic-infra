@@ -3,9 +3,13 @@ kind: Service
 metadata:
   name: sunny-town-server
   namespace: default
+  annotations:
+    metallb.universe.tf/address-pool: custom-addresspool
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: sunny-town-server
   ports:
-    - port: 80
+    - protocol: TCP
+      port: 19128
+      targetPort: 19128
