@@ -4,9 +4,8 @@ metadata:
   name: landing-page-ingress
   namespace: default
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
+    cert-manager.io/cluster-issuer: lets-encrypt
     kubernetes.io/ingress.class: public
-    kubernetes.io/tls-acme: "true"
 spec:
   rules:
   - host: dev.tenefic.com
