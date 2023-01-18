@@ -6,9 +6,6 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchLabels:
-      app: microbot
-  type: ClusterIP
+    app: microbot
   ports:
     - port: 80
-      targetPort: 80
