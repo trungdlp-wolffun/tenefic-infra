@@ -15,10 +15,10 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: guestbook-ui
+            name: microbot
             port:
-              name: https
+              number: 80
   tls:
   - hosts:
     - dev.tenefic.com
-    secretName: landing-page-secret
+    secretName: landing-page-ingress-tls
