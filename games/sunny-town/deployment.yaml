@@ -17,8 +17,5 @@ spec:
       containers:
       - name: sunny-town-server
         image: trungkenbi/avatar:latest
-        resources:
-          limits:
-            cpu: "100m"
         ports:
           - containerPort: 19128
