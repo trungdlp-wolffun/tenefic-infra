@@ -9,3 +9,5 @@ spec:
     app: sunny-town-server
   ports:
     - port: 19128
+      targetPort: 19128
+      nodePort: 31905
