@@ -4,7 +4,7 @@ metadata:
   name: sunny-town-server
   namespace: games
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: sunny-town-server
